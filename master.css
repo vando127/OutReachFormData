@@ -1,0 +1,62 @@
+.News{
+    display:flex;
+    justify-content: space-between;
+}
+.situationRow1{
+    display:flex;
+    justify-content:flex-start;
+}
+#Diagnosis{
+    margin-left: 20px;
+}
+
+.situationRow2{
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 1fr 1fr 2fr;
+    column-gap: 40px;
+}
+
+.Allergies{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.rLevels1{
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 1fr 1fr 2fr;
+    column-gap: 40px;
+}
+    
+.li{
+    display: inline-flex;
+}
+.rLevels2{
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+}
+
+
+.breathing{
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+    align-items: end;
+}
+.header{
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+}
+
+
+footer{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}

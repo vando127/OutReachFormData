@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container body">
+        <h1>Critical care Outreach Assessment</h1>
+            <form>  
+                <div class="form-group header">
+                    <div id="sandbox" class="form-group">
+						<label for="simple">Date</label>
+						<input id="simple" type="text" class="form-control" value="">
+				    </div>
+                    <div>
+                        <label for="time">Time:</label>
+                        <input class="form-control" id="time"type="time">
+                    </div>
+                    <div>
+                        <label for="location">Location:</label>
+                        <input class="form-control" id="location"type="location">
+                    </div>
+                    <div>
+                        <label for="consultant">Condultant:</label>
+                        <input class="form-control" id="Consltant"type="name">
+                    </div>
+                </div>
+                    
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Assessed by:</label>
+                        <select class="form-control" id="exampleFormControlSelect1" aria-label="Select outreach nurse.">
+                            <option selected disabled value="">Select outreach nurse</option>
+                            <option>Joel Pereira</option>
+                            <option>Ricardo Nevado</option>
+                            <option>Susana</option>
+                        </select>
+                    </div>
+                    <div class="News">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">NEWS Score</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option selected disabled value="">?</option>
+                        </select>                    
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">NEWS</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                            <option selected disabled value="">Scale</option>
+                            <option value="">Scale 1</option>
+                            <option value="">Scale 2</option>
+                        </select>                    
+                    </div>  
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">DNAR Status:</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option selected disabled value=""></option>
+                            <option value="">Full Resus</option>
+                            <option value="">DNAR</option>
+                            <option value="">DNAR with TEP</option>
+                            <option value="">Palliation</option>
+                        </select>                    
+                    </div>    
+                </div> 
+                <p><h2>Situation</h2>(Admission reason + reason for calling outreach +significant events from previous assessments)</p>     
+                <div class="form-group">
+                    <table class="table">
+                        <tr> 
+                            <td class="situationRow1">
+                                <label for="Diagnosis">Diagnosis</label>
+                                <textarea class="form-control" id="Diagnosis" ></textarea>                           
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="situationRow2 ">
+                                <div>
+                                    <label  for="Date ">Date</label>
+                                    <input  type="date" class="form-control" value="">                          
+                                </div>
+                                <div>
+                                    <label for="Shift ">Shift</label>
+                                    <textarea class="form-control " id="Shift" ></textarea>
+                                </div>
+                                <div>
+                                    <label for="Description ">Description</label>
+                                    <textarea class="form-control " id="Description"></textarea>
+                                </div>
+                             </td>
+                        </tr>
+                    </table>
+                    <div class="background">
+                        <h2>Background</h2>
+                        <div class="Allergies">
+                            <div class="form-group">
+                                <label for="Allergies">Allergies</label>
+                                    <select class="form-control" id="Allergies">
+                                    <option selected disabled value=""></option>
+                                    <option value="">NQDA</option>
+                                    <option value="">YES: to</option>
+                                </select> 
+                            </div>
+                            <div class="form-group">
+                                <label for="Reaction">Reaction</label>
+                                    <select class="form-control" id="Reaction">
+                                    <option vselected disabled value=""></option>
+                                    <option value="">Sensitive</option>
+                                    <option value="">Pruritus</option>
+                                    <option value="">Rhinitis</option>
+                                    <option value="">Conjunctivitis</option>
+                                    <option value="">Anaphylaxis</option>
+                                </select> 
+                            </div>
+                        </div>
+                        <div>
+                            <div class="News">
+                                <label class="col-sm-2 col-form-label" for="PMH:">PMH</label>
+                                <input type="text" class="form-control alergiesTXT" id="OMH" rows="2">
+                            </div>
+                            <div class="News"> 
+                                <label class="col-sm-2 col-form-label" for="MH">MH</label>
+                                <input type="text" class="form-control alergiesTXT" id="MH" rows="2">
+                            </div>
+                            <div class="News">
+                                <label class="col-sm-2 col-form-label" for="SH">SH</label>                            
+                                <input type="text" class="form-control alergiesTXT" id="SH" rows="2">
+                            </div>                
+                        </div>
+                        <div>
+                            <h2>Respiratory System</h2>  
+                            <div class="form-group">
+                                <label for="Airway">Airway</label>
+                                <select class="form-control" id="Airway">
+                                    <option selected disabled value=""></option>
+                                    <option value="">Patent</option>
+                                    <option value="">Partially obstructed</option>
+                                    <option value="">Totally obstructed</option>
+                                </select> 
+                            </div>
+                            <div class="rLevels1">
+                                <div class="l1">
+                                    <label for="PR">PR:</label>
+                                    <input type="text" class="form-control" name="PR" value="RPM" id="PR">
+                                    
+                                </div>
+                                <div class="l1">
+                                    <label for="SpO2">SpO2</label>
+                                    <input type="text" class="form-control" name="SpO2" value="%" id="SpO2">                           
+                                    
+                                </div>
+                                <div class="l1">
+                                    <label for="SpO2 target">SpO2 target: </label>
+                                    <select class="form-control" name="SpO2 target" id="SpO2 target">
+                                        <option selected disabled value="">SpO2</option>
+                                        <option value="">94-98%</option>
+                                        <option value="">88-92%</option>
+                                        <option value="">Modified</option>
+                                    </select>
+                                </div>                        
+                            </div>
+                            <div class="rLevels2">
+                                <div class="l2">
+                                    <label for="FiO2">FiO2:</label>
+                                    <input type="text" class="form-control" name="FiO2" value="%" id="FiO2">                                    
+                                </div>
+                                <div class="l2">
+                                    <label for="Flow">Flow:</label>
+                                    <input type="text" class="form-control" name="Flow" value="L/M" id="Flow">                
+                                </div>
+                                <div class="l2">
+                                    <label for="Device">Device</label>
+                                    <select class="form-control" name="Device" id="Device">
+                                        <option selected disabled value=""></option>
+                                        <option value="">Nasal Cannula </option>
+                                        <option value="">Face Mask </option>
+                                        <option value="">Venturi face mask</option>
+                                        <option value="">Non Rebreather Mask</option>
+                                        <option value="">Tracheosotmy mask</option>
+                                    </select>
+                                </div>
+                                <div class="l2">
+                                    <label for="O2_Humidification">O2 Humidification</label>
+                                    <select class="form-control" name="O2 Humidification" id="O2_Humidification">
+                                        <option value="">NO</option>
+                                        <option value="">YES</option>                                        
+                                    </select>
+                                </div>                               
+                            </div> 
+                            
+                            <div class="breathing" id="breathe">                                                         
+                                <div>
+                                    <label for="breathing1">Type of breathing:</label>
+                                    <select class="form-control breathing1"></div>" name="breathing" id="breathing">
+                                        <option value="">Symetric</option>
+                                        <option value="">Assymetric</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="breathing"></label>
+                                    <select class="form-control breathing2" name="breathing" id="breathing">
+                                        <option selected disabled value=""></option>
+                                        <option value="">Normal - Eupenia</option>
+                                        <option value="">Abdominal</option>
+                                        <option value="">See-Saw</option>
+                                        <option value="">Ressessive</option>
+                                        <option value="">Cheyne Stokes</option>
+                                        <option value="">kussmaul breathing</option>
+                                        <option value="">Apnoea</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="breathing"></label>
+                                    <select class="form-control breathing3" name="breathing" id="breathing">
+                                        <option value="">Rhythmic </option>
+                                        <option value="">Arrhythmic</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="breathing"></label>
+                                    <select class="form-control breathing4" name="breathing" id="breathing">
+                                        <option selected disabled value=""></option>
+                                        <option value="">Normal </option>
+                                        <option value="">Hypoventilating</option>
+                                        <option value="">Hyperventilating</option>
+                                    </select>
+                                </div>
+                            </div>                    
+                        </div>
+                    </div>
+                </form>
+            <footer>The End!!!</footer>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
