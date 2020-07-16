@@ -60,3 +60,22 @@ footer{
     justify-content: center;
     align-items: center;
 }
+
+.feature_image {    
+    max-height:480px;
+}
+
+.feature_image img{
+    height: 100%;
+    width: 100%;
+}
+
+.breathsnd{
+    display: grid;
+    grid-template-columns:30% 40% 30%;
+
+}
+#radios{
+    display: flex;
+    justify-content: space-evenly;
+}

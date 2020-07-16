@@ -36,7 +36,7 @@
                             <option selected disabled value="">Select outreach nurse</option>
                             <option>Joel Pereira</option>
                             <option>Ricardo Nevado</option>
-                            <option>Susana</option>
+                            <option>Susana Garcez</option>
                         </select>
                     </div>
                     <div class="News">
@@ -65,7 +65,7 @@
                         </select>                    
                     </div>    
                 </div> 
-                <p><h2>Situation</h2>(Admission reason + reason for calling outreach +significant events from previous assessments)</p>     
+                <p><h2>Situation</h2>(Admission reason + reason for calling outreach + significant events from previous assessments)</p>     
                 <div class="form-group">
                     <table class="table">
                         <tr> 
@@ -128,6 +128,8 @@
                                 <input type="text" class="form-control alergiesTXT" id="SH" rows="2">
                             </div>                
                         </div>
+                    </div>
+                    <div class="assessment">
                         <div>
                             <h2>Respiratory System</h2>  
                             <div class="form-group">
@@ -226,7 +228,88 @@
                                         <option value="">Hyperventilating</option>
                                     </select>
                                 </div>
-                            </div>                    
+                            </div>  
+                            <div class="breathsnd">
+                                <div class="">
+                                    <div>
+                                        <label for="Findings/Legend">Findings/Legend:</label>
+                                        <select class="form-control breathing5" name="breathing" id="Findings/Legend">
+                                            <option selected disabled value=""></option>
+                                            <option value="">No atypical findings</option>
+                                            <option value="">Pneumothorax?</option>
+                                            <option value="">Pleural Effusion? </option>
+                                            <option value="">Haemothorax?</option>
+                                            <option value="">Haemopneumothorax?</option>
+                                            <option value="">Consolidation?</option>
+                                            <option value="">Surgical Emphysema?</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="Examination Position: ">Examination Position: </label>
+                                        <select class="form-control breathing6" name="breathing" id="Examination Position: ">
+                                            <option selected disabled value=""></option>
+                                            <option value="">Anterior </option>
+                                            <option value="">Posterior</option>
+                                            <option value="">Anterior & Posterior</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="Pleural/Thoracic Drains">Pleural/Thoracic Drains:</label>
+                                        <select class="form-control breathing7" name="breathing" id="Pleural/Thoracic Drains:">
+                                            <option selected disabled value=""></option>
+                                            <option value="">Pleural Drain RAL</option>
+                                            <option value="">Pleural Drain RML</option>
+                                            <option value="">Pleural Drain RLL</option>
+                                        </select>
+                                        <select class="form-control breathing8" name="breathing" id="Pleural/Thoracic Drains:">
+                                            <option selected disabled value=""></option>
+                                            <option value="">Pleural Drain LAL</option>
+                                            <option value="">Pleural Drain LML</option>
+                                            <option value="">Pleural Drain LLL</option>
+                                        </select>
+                                        <label for="Type:">Type:</label>
+                                        <select class="form-control breathing9" name="breathing" id="Type:">
+                                            <option selected disabled value=""></option>
+                                            <option value="">Underwater seal</option>
+                                            <option value="">Gravity</option>
+                                            <option value="">Suction</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="feature_image">
+                                    <img src="./lung.png" alt="" class="max-width rounded mx-auto d-block" id="lungs">                                    
+                                </div>
+                                <div>
+                                    <div class="input-group mb-3" id="radios">
+                                        <div class="input-group-prepend">
+                                            
+                                            <div class="input-group-text"> 
+                                                <input type="radio" id="ABG" name="r" value="ABG"> 
+                                            </div>
+                                            <label for="ABF">ABG</label>                                                                        
+                                            
+                                            <div class="input-group-text"> 
+                                                <input type="radio" id="VBG" name="r" value="VBG">
+                                            </div>
+                                            <label for="ABF">VBG</label>                                         
+                                        </div>
+                                        <div class="">
+                                            <label for="PH">PH:</label>
+                                            <input type="text" class="form-control" name="PH" value="" id="PH"> 
+                                            <label for="PaO2">PaO2:</label>
+                                            <input type="text" class="form-control" name="PaO2" value="" id="PaO2">   
+                                            <label for="PaCO2">PaCO2:</label>
+                                            <input type="text" class="form-control" name="PaCO2" value="" id="PaCO2">
+                                            <label for="SatO2">SatO2:</label>
+                                            <input type="text" class="form-control" name="SatO2" value="" id="SatO2">
+                                            <label for="HCO3">HCO3:</label>
+                                            <input type="text" class="form-control" name="HCO3" value="" id="HCO3">
+                                            <label for="BE">BE:</label>
+                                            <input type="text" class="form-control" name="BE" value="" id="BE">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                  
                         </div>
                     </div>
                 </form>
